@@ -15,7 +15,7 @@ public class MedicineInfoEntity {
     private String medicineName;
 
 
-    @ManyToOne
+    @OneToOne
     private DoseEntity doseEntity;
 
     @Column(name = "NO_OF_DAYS",nullable = false)
