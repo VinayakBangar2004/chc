@@ -52,7 +52,7 @@ public class UserEntity {
 
     //health card id
     @Column(name = "HEALTH_ID",nullable = false,unique = true)
-    private Integer healthCardNo;
+    private Long healthCardNo;
 
     //DOB
     @Column(name = "USER_DOB",nullable = false)
@@ -65,5 +65,8 @@ public class UserEntity {
     //Gender
     @Column(name = "USER_GENDER",nullable = false)
     private String gender;
+
+    @Column(name = "DOCTOR_REG",nullable = true)
+    private Long doctorRegNo;
 
 }

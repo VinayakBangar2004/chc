@@ -14,7 +14,7 @@ public class PatientInfoEntity {
 
     @Id
     @Column(name = "HEALTH_ID",nullable = false,unique = true)
-    private Integer healthCardNo;
+    private Long healthCardNo;
 
     @Column(name = "USER_NAME", nullable = false,unique = true)
     private String userName;
